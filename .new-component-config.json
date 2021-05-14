@@ -1,8 +1,9 @@
 {
   "type": "functional",
   "prettierConfig": {
-    "semi": true,
+    "semi": false,
     "singleQuote": true,
-    "trailingComma": "es5"
+    "trailingComma": "es5",
+    "jsxSingleQuote": false
   }
 }
