@@ -26,6 +26,7 @@ const Header = () => {
           <NavLink href='/women'>Women</NavLink>
           <NavLink href='/kids'>Kids</NavLink>
           <NavLink href='/collections'>Collections</NavLink>
+          <NavLink href='/collections'>Collections</NavLink>
         </Nav>
         <MobileActions>
           <ShoppingButton>
@@ -53,10 +54,10 @@ const Header = () => {
 }
 
 const MainHeader = styled.div`
+  overflow: auto;
   display: flex;
   align-items: baseline;
   padding: 18px 32px;
-  height: 72px;
   border-bottom: 1px solid ${COLORS.gray[300]};
 
   @media ${p => p.theme.QUERIES.tablet} {
@@ -73,7 +74,7 @@ const MainHeader = styled.div`
 
 const Nav = styled.nav`
   display: flex;
-  gap: 48px;
+  gap: clamp(${24 / 16}rem, 6.5vw - 2.5rem, ${56 / 16}rem);
   margin: 0px 48px;
 
   @media ${p => p.theme.QUERIES.tablet} {
